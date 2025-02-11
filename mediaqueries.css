@@ -1,6 +1,5 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -10,25 +9,33 @@
   #projects {
     height: fit-content;
   }
-  .title1 {
-    margin-bottom: 20px;
-    font-size: 3rem;
-    text-align: center;
-  }
 }
 
-@media screen and (max-width: 1000px) {
+/* --- HAMBURGER NAV --- */
+@media screen and (max-width: 1366px) {
   #desktop-nav {
-    display: none;
+      display: none;
   }
-  #hamburger-nav {
-    display: flex;
+  #contact,
+  footer {
+    height: 20vh;
   }
-  #experience,
-  .experience-details-container {
+  .title {
+    margin-bottom: 1.5rem; /* Sesuaikan jika perlu */
+  }
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+  #experience {
     margin-top: 2rem;
   }
-  #profile,
+  #profile{
+    margin-top: 30%;
+    display: block;
+  }
+  
   .section-container {
     display: block;
   }
@@ -51,25 +58,56 @@
     margin-top: 0;
     flex-wrap: wrap;
   }
+  .about-containers1 {
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 10vh;
+  }
+  #hamburger-nav {
+    height: 100px;
+    margin-bottom: 65px;
   }
   #profile {
-    height: 83vh;
+    margin-top: 45%;
     margin-bottom: 0;
+  }
+  .project-title{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section__text__p1{
+    margin-top: 100px;
+  }
+  .text-container p{
+    text-algin: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .article-container {
+    grid-template-columns: repeat(1, 1fr); /* Jadi 1 kolom saat layar kecil */
+  }
+  .project-description{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
   }
   article {
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+    display: none;
   }
-  .about-containers,
+  .about-containers{
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
