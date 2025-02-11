@@ -10,9 +10,14 @@
   #projects {
     height: fit-content;
   }
+  .title1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   #desktop-nav {
     display: none;
   }
@@ -44,6 +49,7 @@
   }
   .about-containers {
     margin-top: 0;
+    flex-wrap: wrap;
   }
 }
 

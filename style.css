@@ -199,6 +199,12 @@ section {
   text-align: center;
 }
 
+.title1 {
+  min-height: auto; /* Atur auto jika terlalu tinggi */
+  font-size: 3rem;
+  text-align: center;
+}
+
 #socials-container {
   display: flex;
   justify-content: center;
@@ -303,11 +309,6 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
 .section__pic-container {
   height: 400px;
   width: 400px;
@@ -355,30 +356,48 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
-  position: relative;
+.about-containers1 {
+  display: flex;
+  justify-content: center; /* Menengahkan kartu */
+  align-items: stretch; /* Membuat tinggi kartu seragam */
+  flex-direction: column; /* Tetap vertikal */
+  gap: 20px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  flex-wrap: wrap; /* Agar tetap responsif di layar kecil */
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
+  border: 1px solid rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
-  margin: 1rem;
-  color: black;
+  font-size: 1.5rem; /* Membuat judul lebih jelas */
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  text-align: justify; /* Merapikan teks agar rata kiri-kanan */
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(163, 163, 163);
 }
+
 
 /* CONTACT */
 
